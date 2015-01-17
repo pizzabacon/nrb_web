@@ -4,4 +4,15 @@
     <p class="center">
       Welcome!
     </p>
+
+    <form>
+    	<input name="Organization" id="org">
+    	<button onclick="setOrg()">Retreive Issues</button>
+    </form>
+
+	<script type="text/javascript">
+		function setOrg () {
+			sessionStorage.setItem('sessionOrg', document.getElementById('org').value);
+		}
+	</script>
 {% endblock %}
