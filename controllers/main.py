@@ -7,7 +7,7 @@ def main_route():
     options = {}
     return render_template("index.html", **options)
 
-@app.route('/issues')
+@main.route('/issues')
 def issues():
 	options = {}
 	return render_template("issues.html", **options)
